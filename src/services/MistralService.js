@@ -1,5 +1,5 @@
 const MISTRAL_API_KEY = import.meta.env.VITE_MISTRAL_API_KEY;
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyCdG4ho3MPLJxYwBfGpB3wBX1a7eZ5OpqE";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
 const fetchWithRetry = async (url, options, maxRetries = 3, timeoutMs = 20000) => {
     let attempt = 0;
     while (attempt < maxRetries) {
